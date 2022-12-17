@@ -2,17 +2,11 @@ package com.atom.mall.tiny.mbg.mapper;
 
 import com.atom.mall.tiny.mbg.model.PmsBrand;
 import com.atom.mall.tiny.mbg.model.PmsBrandExample;
+import io.swagger.annotations.ApiModelProperty;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface PmsBrandMapper {
-
-    /**
-     * 我写的，获取所有品牌信息
-     * @return 品牌信息集合
-     */
-    List<PmsBrand> selectAllBrand();
-
     long countByExample(PmsBrandExample example);
 
     int deleteByExample(PmsBrandExample example);

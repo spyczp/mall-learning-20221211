@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface PmsBrandService {
 
-    List<PmsBrand> myListAllBrand();
+    /*List<PmsBrand> myListAllBrand();*/
 
     List<PmsBrand> listAllBrand();
 
@@ -19,4 +19,5 @@ public interface PmsBrandService {
     List<PmsBrand> listBrand(int pageNum, int pageSize);
 
     PmsBrand getBrand(Long id);
+
 }

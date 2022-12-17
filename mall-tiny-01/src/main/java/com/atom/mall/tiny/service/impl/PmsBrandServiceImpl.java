@@ -5,8 +5,6 @@ import com.atom.mall.tiny.mbg.model.PmsBrand;
 import com.atom.mall.tiny.mbg.model.PmsBrandExample;
 import com.atom.mall.tiny.service.PmsBrandService;
 import com.github.pagehelper.PageHelper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -18,11 +16,11 @@ public class PmsBrandServiceImpl implements PmsBrandService {
     @Resource
     private PmsBrandMapper pmsBrandMapper;
 
-    @Override
+    /*@Override
     public List<PmsBrand> myListAllBrand() {
         return pmsBrandMapper.selectAllBrand();
     }
-
+*/
     @Override
     public List<PmsBrand> listAllBrand() {
         return pmsBrandMapper.selectByExample(new PmsBrandExample());

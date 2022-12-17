@@ -1,16 +1,11 @@
 package com.atom.mall.tiny.controller;
 
-import com.atom.mall.tiny.common.api.CommonResult;
-import com.atom.mall.tiny.mbg.model.PmsBrand;
 import com.atom.mall.tiny.service.PmsBrandService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @Api(tags = "PmsBrandController", description = "商品品牌管理")
 @RestController
@@ -20,13 +15,14 @@ public class PmsBrandController {
     @Autowired
     private PmsBrandService pmsBrandService;
 
-    @ApiOperation("获取所有品牌列表")
+    private static final Logger LOGGER = LoggerFactory.getLogger(PmsBrandController.class);
+
+
+    /*@ApiOperation("获取所有品牌列表")
     @GetMapping("/myGetBrandList")
     public List<PmsBrand> myGetBrandList(){
         return pmsBrandService.myListAllBrand();
-    }
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(PmsBrandController.class);
+    }*/
 
     /*
     @ApiOperation("获取所有品牌列表")
